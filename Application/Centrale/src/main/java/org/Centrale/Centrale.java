@@ -17,4 +17,12 @@ public class Centrale {
 		this.id=id;
 	}
 
+	public boolean consommerEnergie(int n){
+		if(reservEnergie.consommer(n)) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
